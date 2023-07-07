@@ -1,67 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    <body>
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
 
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
 
-        
-        <!-- As a link -->
-    
-      <div class="container">
-    
-            <h1>This is normal plain text</h1>
-            <h3>It takes up <em>66%</em> of the screen (8 of 12 rows)</h3>
-            <p>But <em>only on a large (<code>lg</code>) screen</em>.But when you resize to have a smaller screen it takes up the whole space!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-    
-          <div class="row">
-            <div class="col">
-                <img src="nature.jpg" class="img-fluid">
-            </div>
-          </div>
-    
-          <div class="row mt-3">
-            <div class="col-lg-8 offset-lg-2">
-              <p>The image above this takes up the entire space. It's just a <code>col</code>, while this row is going to do the only-be-half-width-on-a-big-screen thing because I used <code>col-lg-8 offset-lg-2</code>.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <footer class="footer text-muted">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <p><strong>This is a footer.</strong></p>
-              <p>I could use this space to tell you a lot about myself.</p>
-            </div>
-            <div class="col">
-              <p>Maybe I'll put social media stuff here.</p>
-              <ul>
-                <li><a href="#">Blah</a></li>
-                <li><a href="#">Blah</a></li>
-                <li><a href="#">Blah</a></li>
-              </ul>
-            </div>
-            <div class="col">
-              <p>This does use some custom CSS to make the background grey and add a little padding up top and below, so you can edit it in the <code>&lt;style&gt;</code> block at the top of the HTML.</p>
-            </div>
-            <div class="col">
-              <p>I could list some of my favorite projects over here? Or something like that, maybe.</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
 
-</div>
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
 </head>
+<body>
+
+<h2>Manatí</h2>
+<p>Some text.</p>
+<p><strong>Note:</strong> TK.</p>
+
+<header>
+  <h2>The Untold Stories of The People Behind the Roads</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">TK</a></li>
+      <li><a href="#">TK</a></li>
+      <li><a href="#">TK</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>TK</h1>
+    <p>Manatí is blah blah.</p>
+   
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
 </html>
