@@ -84,22 +84,25 @@ footer {
 
 <section>
   <nav>
+    <div class="container">
+      <h2>Accordion Example</h2>
+      <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
     <ul>
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">(A) Nombre</a>
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">A) Calle Elliot Vélez</a>
             </h4>
           </div>
       <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">La persona hizo esto.</div>
+        <div class="panel-body">Unknown.</div>
       </div>
 
       <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">(B) Nombre</a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">B)</a>
           </h4>
         </div>
         <div id="collapse2" class="panel-collapse collapse">
